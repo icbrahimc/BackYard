@@ -26,8 +26,10 @@ class ViewController: UIViewController {
     
     func setup() -> Void {
         // Setup the login button.
-        let loginButton: FBSDKLoginButton = FBSDKLoginButton()
+        let loginButtonFrame = CGRect(x: 0, y: 0, width: view.frame.width - 32, height: 50);
+        let loginButton: FBSDKLoginButton = FBSDKLoginButton(frame: loginButtonFrame)
         loginButton.center = self.view.center
+        
         view.addSubview(loginButton)
         
         self.view.backgroundColor = .white
