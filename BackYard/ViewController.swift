@@ -27,14 +27,33 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func setup() -> Void {
         // Setup the login button.
-        let loginButtonFrame = CGRect(x: 0, y: 0, width: view.frame.width - 32, height: 50);
+        let loginButtonFrame = CGRect(x: 0, y: 0, width: view.frame.width - 32, height: 50)
+        let fbColor = UIColor.init(red: 59, green: 89, blue: 152, alpha: 1.0)
+        
+        
+        let fbLogin = UIButton(type: .system)
+        fbLogin.frame = loginButtonFrame
+        fbLogin.setTitle("Log In With Facebook", for: .normal)
+        fbLogin.setTitleColor(fbColor, for: .normal)
+        fbLogin.backgroundColor = .black
+        fbLogin.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        fbLogin.addTarget(self, action: #selector(handleFaceBookLogin), for: .touchUpInside)
+        fbLogin.center = self.view.center
+        view.addSubview(fbLogin)
+        
         let loginButton: FBSDKLoginButton = FBSDKLoginButton(frame: loginButtonFrame)
         loginButton.center = self.view.center
+        loginButton.layer.cornerRadius = 25.0
+        loginButton.layer.masksToBounds = true
         loginButton.delegate = self
         
-        view.addSubview(loginButton)
+//        view.addSubview(loginButton)
         
         self.view.backgroundColor = .white
+    }
+    
+    func handleFaceBookLogin() {
+        print("Hey")
     }
 
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
