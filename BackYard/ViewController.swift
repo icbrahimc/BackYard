@@ -15,9 +15,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
         
         setup()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +47,16 @@ class ViewController: UIViewController {
         
         fbLogin.addTarget(self, action: #selector(handleFaceBookLogin), for: .touchUpInside)
         view.addSubview(fbLogin)
+        
+        // Setup logo image in the code.
+        let logoImageFrame = CGRect(x: 0, y: offsetY * 0.3, width: view.frame.width - 32, height: 50)
+        let logoImage = UIImage(named: "backYard")
+        let logoImageView = UIImageView(image: logoImage)
+        logoImageView.frame = logoImageFrame
+        logoImageView.center.x = self.view.center.x
+        
+        view.addSubview(logoImageView)
+        
         
         self.view.backgroundColor = .white
     }
