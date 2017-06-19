@@ -20,11 +20,16 @@ class ViewController: UIViewController {
         setup()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    override func viewWillAppear(_ animated: Bool) {
+        let handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+            if let _ = user {
+                print("user is already authenicated")
+                let homeController = HomeViewController()
+                self.navigationController?.pushViewController(homeController, animated: true)
+            }
+        }
     }
-    
     func setup() -> Void {
         // Offsets for the screen.
 //        let offsetX: CGFloat = UIScreen.main.bounds.maxX
@@ -78,10 +83,15 @@ class ViewController: UIViewController {
             
             let credential = FacebookAuthProvider.credential(withAccessToken: accessTokenString)
             Auth.auth().signIn(with: credential) { (user, error) in
-                // ...
                 if let error = error {
                     print(error.localizedDescription)
                     return
+                }
+                
+                // If the user is signed in and authenticated, segue to a new view controller.
+                if let _ = user {
+                    let homeController = HomeViewController()
+                    self.navigationController?.pushViewController(homeController, animated: true)
                 }
             }
         })
