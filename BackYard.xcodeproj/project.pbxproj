@@ -139,13 +139,12 @@
 		AA10051D1EEFCF6D0056B67D /* BackYard */ = {
 			isa = PBXGroup;
 			children = (
+				AA4BB3EC1EF7895E007EBE96 /* Controllers */,
 				AA10051E1EEFCF6D0056B67D /* AppDelegate.swift */,
-				AA1005201EEFCF6D0056B67D /* ViewController.swift */,
 				AA1005251EEFCF6D0056B67D /* Assets.xcassets */,
 				AA1005271EEFCF6D0056B67D /* LaunchScreen.storyboard */,
 				AAE567581EF0E3E5001152CC /* GoogleService-Info.plist */,
 				AA10052A1EEFCF6D0056B67D /* Info.plist */,
-				AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */,
 			);
 			path = BackYard;
 			sourceTree = "<group>";
@@ -166,6 +165,15 @@
 				AA1005401EEFCF6D0056B67D /* Info.plist */,
 			);
 			path = BackYardUITests;
+			sourceTree = "<group>";
+		};
+		AA4BB3EC1EF7895E007EBE96 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */,
+				AA1005201EEFCF6D0056B67D /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
