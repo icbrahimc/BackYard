@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let offsetY: CGFloat = UIScreen.main.bounds.maxY
         
         // Setup the login button.
-        let loginButtonFrame = CGRect(x: 0, y: offsetY * 0.8
+        let loginButtonFrame = CGRect(x: 0, y: offsetY * 0.5
             , width: view.frame.width - 32, height: 50)
         
         // Custom Facebook login.
