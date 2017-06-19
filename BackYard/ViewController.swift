@@ -15,7 +15,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = true
         
         setup()
     }
@@ -30,7 +29,14 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setup()
+    }
+    
     func setup() -> Void {
+        // Setup the view controller.
+        self.navigationController?.isNavigationBarHidden = true
         // Offsets for the screen.
 //        let offsetX: CGFloat = UIScreen.main.bounds.maxX
         let offsetY: CGFloat = UIScreen.main.bounds.maxY
