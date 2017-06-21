@@ -10,11 +10,33 @@ import FirebaseAuth
 import LBTAComponents
 import UIKit
 
+class UserDataSource: Datasource {
+    let words = ["user", "hey", "world"]
+    
+    override func headerClasses() -> [DatasourceCell.Type]? {
+        return [UserHeader.self]
+    }
+    
+    override func cellClasses() -> [DatasourceCell.Type] {
+        return [UserCell.self]
+    }
+    
+    override func item(_ indexPath: IndexPath) -> Any? {
+        return words[indexPath.item]
+    }
+    
+    override func numberOfItems(_ section: Int) -> Int {
+        return words.count
+    }
+}
+
 class HomeViewController: DatasourceController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.isNavigationBarHidden = false
+        self.navigationItem.hidesBackButton = true
         view.backgroundColor = .white
         
         let userDataSource = UserDataSource()
@@ -29,8 +51,7 @@ class HomeViewController: DatasourceController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 150)
     }
 }
