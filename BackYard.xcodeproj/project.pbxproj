@@ -15,6 +15,7 @@
 		AA1005341EEFCF6D0056B67D /* BackYardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1005331EEFCF6D0056B67D /* BackYardTests.swift */; };
 		AA10053F1EEFCF6D0056B67D /* BackYardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10053E1EEFCF6D0056B67D /* BackYardUITests.swift */; };
 		AA4BB3EB1EF76E0C007EBE96 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */; };
+		AA718D971EFA44DE00D20F8C /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA718D961EFA44DE00D20F8C /* Cells.swift */; };
 		AAE567591EF0E3E5001152CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE567581EF0E3E5001152CC /* GoogleService-Info.plist */; };
 		B547CC48E990895486CC49C7 /* Pods_BackYardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC67AE09A28F33724F9271 /* Pods_BackYardUITests.framework */; };
 		D20E99D87B0ACFB9EF396BA3 /* Pods_BackYard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */; };
@@ -57,6 +58,7 @@
 		AA10053E1EEFCF6D0056B67D /* BackYardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackYardUITests.swift; sourceTree = "<group>"; };
 		AA1005401EEFCF6D0056B67D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AA718D961EFA44DE00D20F8C /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		AAE567581EF0E3E5001152CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABD3AD5A0A21AA98126A6AF4 /* Pods-BackYard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackYard.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackYard/Pods-BackYard.release.xcconfig"; sourceTree = "<group>"; };
 		B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackYard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 		AA10051D1EEFCF6D0056B67D /* BackYard */ = {
 			isa = PBXGroup;
 			children = (
+				AA718D951EFA443E00D20F8C /* Cells */,
 				AA4BB3EC1EF7895E007EBE96 /* Controllers */,
 				AA10051E1EEFCF6D0056B67D /* AppDelegate.swift */,
 				AA1005251EEFCF6D0056B67D /* Assets.xcassets */,
@@ -174,6 +177,14 @@
 				AA1005201EEFCF6D0056B67D /* ViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AA718D951EFA443E00D20F8C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA718D961EFA44DE00D20F8C /* Cells.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA1005211EEFCF6D0056B67D /* ViewController.swift in Sources */,
+				AA718D971EFA44DE00D20F8C /* Cells.swift in Sources */,
 				AA10051F1EEFCF6D0056B67D /* AppDelegate.swift in Sources */,
 				AA4BB3EB1EF76E0C007EBE96 /* HomeViewController.swift in Sources */,
 			);
