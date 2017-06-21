@@ -37,14 +37,14 @@ class HomeViewController: DatasourceController {
         
         navigationController?.isNavigationBarHidden = false
         self.navigationItem.hidesBackButton = true
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         
         let userDataSource = UserDataSource()
         self.datasource = userDataSource
         
         let handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             if let user = user {
-                self.navigationItem.prompt = user.displayName
+//                self.navigationItem.prompt = user.displayName
                 
             }
         }
