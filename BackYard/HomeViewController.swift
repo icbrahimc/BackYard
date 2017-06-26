@@ -11,7 +11,7 @@ import LBTAComponents
 import UIKit
 
 class UserDataSource: Datasource {
-    let words = ["user", "hey", "world"]
+    let words = ["user"]
     
     override func headerClasses() -> [DatasourceCell.Type]? {
         return [UserHeader.self]
@@ -41,14 +41,6 @@ class HomeViewController: DatasourceController {
         
         let userDataSource = UserDataSource()
         self.datasource = userDataSource
-        
-        let handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            if let user = user {
-//                self.navigationItem.prompt = user.displayName
-                
-            }
-        }
-        // Do any additional setup after loading the view.
     }
 
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
