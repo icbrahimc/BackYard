@@ -17,6 +17,7 @@
 		AA4BB3EB1EF76E0C007EBE96 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */; };
 		AA718D971EFA44DE00D20F8C /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA718D961EFA44DE00D20F8C /* Cells.swift */; };
 		AA958C121F00B3EE0069D15E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958C111F00B3EE0069D15E /* SettingsViewController.swift */; };
+		AA958C151F00DC290069D15E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958C141F00DC290069D15E /* User.swift */; };
 		AAE567591EF0E3E5001152CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE567581EF0E3E5001152CC /* GoogleService-Info.plist */; };
 		B547CC48E990895486CC49C7 /* Pods_BackYardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC67AE09A28F33724F9271 /* Pods_BackYardUITests.framework */; };
 		D20E99D87B0ACFB9EF396BA3 /* Pods_BackYard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */; };
@@ -61,6 +62,7 @@
 		AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AA718D961EFA44DE00D20F8C /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		AA958C111F00B3EE0069D15E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AA958C141F00DC290069D15E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AAE567581EF0E3E5001152CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABD3AD5A0A21AA98126A6AF4 /* Pods-BackYard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackYard.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackYard/Pods-BackYard.release.xcconfig"; sourceTree = "<group>"; };
 		B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackYard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 		AA10051D1EEFCF6D0056B67D /* BackYard */ = {
 			isa = PBXGroup;
 			children = (
+				AA958C131F00DBF30069D15E /* Models */,
 				AA718D951EFA443E00D20F8C /* Cells */,
 				AA4BB3EC1EF7895E007EBE96 /* Controllers */,
 				AA10051E1EEFCF6D0056B67D /* AppDelegate.swift */,
@@ -188,6 +191,14 @@
 				AA718D961EFA44DE00D20F8C /* Cells.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		AA958C131F00DBF30069D15E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA958C141F00DC290069D15E /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,6 +487,7 @@
 			files = (
 				AA1005211EEFCF6D0056B67D /* LoginViewController.swift in Sources */,
 				AA718D971EFA44DE00D20F8C /* Cells.swift in Sources */,
+				AA958C151F00DC290069D15E /* User.swift in Sources */,
 				AA10051F1EEFCF6D0056B67D /* AppDelegate.swift in Sources */,
 				AA958C121F00B3EE0069D15E /* SettingsViewController.swift in Sources */,
 				AA4BB3EB1EF76E0C007EBE96 /* HomeViewController.swift in Sources */,
