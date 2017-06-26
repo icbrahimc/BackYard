@@ -37,7 +37,10 @@ class HomeViewController: DatasourceController {
         
         navigationController?.isNavigationBarHidden = false
         self.navigationItem.hidesBackButton = true
-        view.backgroundColor = .black
+        view.backgroundColor = .white
+        
+        let settingsBar = UIBarButtonItem(title: "\u{2699}", style: .plain, target: self, action: #selector(openSettings))
+        self.navigationItem.rightBarButtonItem = settingsBar
         
         let userDataSource = UserDataSource()
         self.datasource = userDataSource
@@ -45,5 +48,10 @@ class HomeViewController: DatasourceController {
 
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 150)
+    }
+    
+    func openSettings() -> Void {
+        let settingsViewController = SettingsViewController()
+        self.navigationController?.pushViewController(settingsViewController, animated: true)
     }
 }
