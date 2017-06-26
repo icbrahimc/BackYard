@@ -10,6 +10,7 @@ import FBSDKCoreKit
 import FBSDKShareKit
 import FBSDKLoginKit
 import Firebase
+import FirebaseAuth
 import UIKit
 
 @UIApplicationMain
@@ -30,10 +31,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // The main view controller for the application.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let homeViewController = UIViewController()
-        homeViewController.view.backgroundColor = UIColor.white
-        window!.rootViewController = UINavigationController(rootViewController: ViewController())
-        window!.makeKeyAndVisible()
+        _ = Auth.auth().addStateDidChangeListener { (auth, user) in
+            if let _ = user {
+                let homeViewController = HomeViewController()
+                homeViewController.view.backgroundColor = UIColor.white
+                self.window!.rootViewController = UINavigationController(rootViewController: homeViewController)
+                self.window!.makeKeyAndVisible()
+            } else {
+                let homeViewController = LoginViewController()
+                homeViewController.view.backgroundColor = UIColor.white
+                self.window!.rootViewController = UINavigationController(rootViewController: homeViewController)
+                self.window!.makeKeyAndVisible()
+            }
+        }
+        
         return true
     }
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {

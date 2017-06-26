@@ -11,6 +11,7 @@ target 'BackYard' do
 	pod 'FBSDKLoginKit'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Core'
+	pod 'LBTAComponents'
   target 'BackYardTests' do
     inherit! :search_paths
     # Pods for testing
