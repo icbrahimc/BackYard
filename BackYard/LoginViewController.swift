@@ -11,23 +11,12 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setup()
-    }
-
-
-    override func viewWillAppear(_ animated: Bool) {
-//        let handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-//            if let _ = user {
-//                print("user is already authenicated")
-//                let homeController = HomeViewController()
-//                self.navigationController?.pushViewController(homeController, animated: true)
-//            }
-//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.window!.rootViewController = UINavigationController(rootViewController: homeViewController)
                 self.window!.makeKeyAndVisible()
             } else {
-                let homeViewController = ViewController()
+                let homeViewController = LoginViewController()
                 homeViewController.view.backgroundColor = UIColor.white
                 self.window!.rootViewController = UINavigationController(rootViewController: homeViewController)
                 self.window!.makeKeyAndVisible()
