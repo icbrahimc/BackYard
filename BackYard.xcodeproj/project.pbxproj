@@ -17,7 +17,7 @@
 		AA4BB3EB1EF76E0C007EBE96 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */; };
 		AA718D971EFA44DE00D20F8C /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA718D961EFA44DE00D20F8C /* Cells.swift */; };
 		AA958C121F00B3EE0069D15E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958C111F00B3EE0069D15E /* SettingsViewController.swift */; };
-		AAE567591EF0E3E5001152CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE567581EF0E3E5001152CC /* GoogleService-Info.plist */; };
+		AAD281991F12E34A005F2A87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAD281981F12E34A005F2A87 /* GoogleService-Info.plist */; };
 		B547CC48E990895486CC49C7 /* Pods_BackYardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC67AE09A28F33724F9271 /* Pods_BackYardUITests.framework */; };
 		D20E99D87B0ACFB9EF396BA3 /* Pods_BackYard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,7 @@
 		AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AA718D961EFA44DE00D20F8C /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		AA958C111F00B3EE0069D15E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		AAE567581EF0E3E5001152CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAD281981F12E34A005F2A87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABD3AD5A0A21AA98126A6AF4 /* Pods-BackYard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackYard.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackYard/Pods-BackYard.release.xcconfig"; sourceTree = "<group>"; };
 		B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackYard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFC67AE09A28F33724F9271 /* Pods_BackYardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackYardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,7 +148,7 @@
 				AA10051E1EEFCF6D0056B67D /* AppDelegate.swift */,
 				AA1005251EEFCF6D0056B67D /* Assets.xcassets */,
 				AA1005271EEFCF6D0056B67D /* LaunchScreen.storyboard */,
-				AAE567581EF0E3E5001152CC /* GoogleService-Info.plist */,
+				AAD281981F12E34A005F2A87 /* GoogleService-Info.plist */,
 				AA10052A1EEFCF6D0056B67D /* Info.plist */,
 			);
 			path = BackYard;
@@ -309,8 +309,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD281991F12E34A005F2A87 /* GoogleService-Info.plist in Resources */,
 				AA1005291EEFCF6D0056B67D /* LaunchScreen.storyboard in Resources */,
-				AAE567591EF0E3E5001152CC /* GoogleService-Info.plist in Resources */,
 				AA1005261EEFCF6D0056B67D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
