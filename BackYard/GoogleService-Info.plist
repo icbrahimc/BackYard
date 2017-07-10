@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>1075544355189-ujnja4b0vhbu30pemi5qpipfud8kqhc2.apps.googleusercontent.com</string>
+	<string>1075544355189-6l2lutlddm31vmgp2mcii6randidmp27.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1075544355189-ujnja4b0vhbu30pemi5qpipfud8kqhc2</string>
+	<string>com.googleusercontent.apps.1075544355189-6l2lutlddm31vmgp2mcii6randidmp27</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDu9n3uEnmEnmLQiaHr697bUhT-gLu7V-c</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>ibrahim.BackYard</string>
+	<string>com.backyardtheapp.BackYard</string>
 	<key>PROJECT_ID</key>
 	<string>backyard-53b49</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1075544355189:ios:93a7701d26d40ebc</string>
+	<string>1:1075544355189:ios:97384cba61af2682</string>
 	<key>DATABASE_URL</key>
 	<string>https://backyard-53b49.firebaseio.com</string>
 </dict>
