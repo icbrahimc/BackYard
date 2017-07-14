@@ -7,9 +7,9 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseDatabase
 
 class BackYardBaseAPI: NSObject {
-    override init() {
-        <#code#>
-    }
+    static let sharedInstance = BackYardBaseAPI()
 }
