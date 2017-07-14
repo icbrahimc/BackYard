@@ -14,6 +14,7 @@
 		AA1005291EEFCF6D0056B67D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1005271EEFCF6D0056B67D /* LaunchScreen.storyboard */; };
 		AA1005341EEFCF6D0056B67D /* BackYardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1005331EEFCF6D0056B67D /* BackYardTests.swift */; };
 		AA10053F1EEFCF6D0056B67D /* BackYardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10053E1EEFCF6D0056B67D /* BackYardUITests.swift */; };
+		AA10C81C1F1863C200469B50 /* BackYardBaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10C81B1F1863C200469B50 /* BackYardBaseAPI.swift */; };
 		AA4BB3EB1EF76E0C007EBE96 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */; };
 		AA718D971EFA44DE00D20F8C /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA718D961EFA44DE00D20F8C /* Cells.swift */; };
 		AA958C121F00B3EE0069D15E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA958C111F00B3EE0069D15E /* SettingsViewController.swift */; };
@@ -58,6 +59,7 @@
 		AA10053A1EEFCF6D0056B67D /* BackYardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackYardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA10053E1EEFCF6D0056B67D /* BackYardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackYardUITests.swift; sourceTree = "<group>"; };
 		AA1005401EEFCF6D0056B67D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA10C81B1F1863C200469B50 /* BackYardBaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackYardBaseAPI.swift; sourceTree = "<group>"; };
 		AA4BB3EA1EF76E0C007EBE96 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AA718D961EFA44DE00D20F8C /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		AA958C111F00B3EE0069D15E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		AA10051D1EEFCF6D0056B67D /* BackYard */ = {
 			isa = PBXGroup;
 			children = (
+				AA10C81A1F1863AA00469B50 /* API */,
 				AA718D951EFA443E00D20F8C /* Cells */,
 				AA4BB3EC1EF7895E007EBE96 /* Controllers */,
 				AA10051E1EEFCF6D0056B67D /* AppDelegate.swift */,
@@ -170,6 +173,14 @@
 				AA1005401EEFCF6D0056B67D /* Info.plist */,
 			);
 			path = BackYardUITests;
+			sourceTree = "<group>";
+		};
+		AA10C81A1F1863AA00469B50 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AA10C81B1F1863C200469B50 /* BackYardBaseAPI.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		AA4BB3EC1EF7895E007EBE96 /* Controllers */ = {
@@ -474,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA10C81C1F1863C200469B50 /* BackYardBaseAPI.swift in Sources */,
 				AA1005211EEFCF6D0056B67D /* LoginViewController.swift in Sources */,
 				AA718D971EFA44DE00D20F8C /* Cells.swift in Sources */,
 				AA10051F1EEFCF6D0056B67D /* AppDelegate.swift in Sources */,
