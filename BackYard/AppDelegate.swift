@@ -11,6 +11,7 @@ import FBSDKShareKit
 import FBSDKLoginKit
 import Firebase
 import FirebaseAuth
+import FirebaseDatabase
 import UIKit
 
 @UIApplicationMain
