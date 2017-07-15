@@ -21,6 +21,7 @@
 		AAD2819B1F132939005F2A87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAD2819A1F132939005F2A87 /* GoogleService-Info.plist */; };
 		B547CC48E990895486CC49C7 /* Pods_BackYardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC67AE09A28F33724F9271 /* Pods_BackYardUITests.framework */; };
 		D20E99D87B0ACFB9EF396BA3 /* Pods_BackYard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */; };
+		F0AB1D061F1A994E00C7F95E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1D051F1A994E00C7F95E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		ABD3AD5A0A21AA98126A6AF4 /* Pods-BackYard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackYard.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackYard/Pods-BackYard.release.xcconfig"; sourceTree = "<group>"; };
 		B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackYard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFC67AE09A28F33724F9271 /* Pods_BackYardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackYardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AB1D051F1A994E00C7F95E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		AA10051D1EEFCF6D0056B67D /* BackYard */ = {
 			isa = PBXGroup;
 			children = (
+				F0AB1D041F1A992B00C7F95E /* Models */,
 				AA10C81A1F1863AA00469B50 /* API */,
 				AA718D951EFA443E00D20F8C /* Cells */,
 				AA4BB3EC1EF7895E007EBE96 /* Controllers */,
@@ -199,6 +202,14 @@
 				AA718D961EFA44DE00D20F8C /* Cells.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		F0AB1D041F1A992B00C7F95E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0AB1D051F1A994E00C7F95E /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,6 +502,7 @@
 				AA10051F1EEFCF6D0056B67D /* AppDelegate.swift in Sources */,
 				AA958C121F00B3EE0069D15E /* SettingsViewController.swift in Sources */,
 				AA4BB3EB1EF76E0C007EBE96 /* HomeViewController.swift in Sources */,
+				F0AB1D061F1A994E00C7F95E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
