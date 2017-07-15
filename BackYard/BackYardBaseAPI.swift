@@ -11,7 +11,7 @@ import Firebase
 import FirebaseDatabase
 
 class BackYardBaseAPI: NSObject {
-    //static let backyardAPI = BackYardBaseAPI()
+    static let backyardAPI = BackYardBaseAPI()
     private let rootDB: DatabaseReference! = Database.database().reference()
     
     

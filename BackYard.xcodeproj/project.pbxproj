@@ -289,8 +289,7 @@
 				TargetAttributes = {
 					AA10051A1EEFCF6D0056B67D = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 29RWTSXZD9;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					AA10052E1EEFCF6D0056B67D = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -648,7 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 29RWTSXZD9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackYard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.backyardtheapp.BackYard;
@@ -664,7 +663,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 29RWTSXZD9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BackYard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.backyardtheapp.BackYard;
