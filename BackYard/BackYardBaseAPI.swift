@@ -13,5 +13,4 @@ import FirebaseDatabase
 class BackYardBaseAPI: NSObject {
     static let sharedInstance = BackYardBaseAPI()
     
-    
 }
