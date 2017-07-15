@@ -22,8 +22,5 @@ struct User {
         this.imageURL = imageURL
         this.email = email
         this.username = username
-        
     }
-    
-    
 }
