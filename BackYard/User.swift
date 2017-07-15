@@ -23,5 +23,4 @@ struct User {
         this.email = email
         this.username = username
     }
-    
 }
