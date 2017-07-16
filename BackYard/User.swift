@@ -17,10 +17,10 @@ struct User {
     username: String
     
     init(firstName: String, lastName: String, imageURL: String, email: String, username: String) {
-        this.firstName = firstName
-        this.lastName = lastName
-        this.imageURL = imageURL
-        this.email = email
-        this.username = username
+        self.firstName = firstName
+        self.lastName = lastName
+        self.imageURL = imageURL
+        self.email = email
+        self.username = username
     }
 }
