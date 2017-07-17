@@ -13,6 +13,7 @@ target 'BackYard' do
 	pod 'Firebase/Core'
 	pod 'Firebase/Database'
 	pod 'LBTAComponents'
+	pod 'SwiftyJSON'
   target 'BackYardTests' do
     inherit! :search_paths
     # Pods for testing

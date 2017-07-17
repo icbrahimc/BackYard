@@ -14,7 +14,6 @@ class BackYardBaseAPI: NSObject {
     static let backyardAPI = BackYardBaseAPI()
     private let rootDB: DatabaseReference! = Database.database().reference()
     
-    
     /**
      Given a user's UUID, fetch the data associated with that user.
     */

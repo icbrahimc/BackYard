@@ -46,6 +46,7 @@ PODS:
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
   - LBTAComponents (0.1.9)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - FBSDKCoreKit
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - LBTAComponents
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -70,7 +72,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
   LBTAComponents: 9a5d314080d1f80208062ccc81a2d25225c5f572
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 34bd1e5f3f5677eb706f6e508a28201b79d99909
+PODFILE CHECKSUM: 4eee70b21eab9acfc2910be20a83dc9b392ce3f2
 
 COCOAPODS: 1.2.0
