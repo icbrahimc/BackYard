@@ -8,11 +8,23 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 import FirebaseDatabase
 
 class BackYardBaseAPI: NSObject {
     static let backyardAPI = BackYardBaseAPI()
     private let rootDB: DatabaseReference! = Database.database().reference()
+    
+    /**
+     Authenticate the user with credentials.
+    */
+    func authenticateUser(credentials: AuthCredential) {
+        let auth = Auth.auth().signIn(with: credentials, completion: { (user, error) in
+            if let err = error {
+                print(err.localizedDescription)
+            }
+        })
+    }
     
     /**
      Given a user's UUID, fetch the data associated with that user.
