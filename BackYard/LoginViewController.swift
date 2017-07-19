@@ -85,29 +85,23 @@ class LoginViewController: UIViewController {
                     return
                 }
                 
-                let graphPath = "me"
-                let parameters = ["fields": "id, email, name, first_name, last_name, picture"]
-                let graphRequest = FBSDKGraphRequest(graphPath: graphPath, parameters: parameters)
-                let connection = FBSDKGraphRequestConnection()
-                
-                connection.add(graphRequest, completionHandler: { (connection, result, error) in
-                    if let error = error {
-                        print(error.localizedDescription)
-                    } else {
-                        let json = JSON(result!)
-                        print(json["email"].stringValue)
-                        print(json["name"].stringValue)
-                        print(json["first_name"].stringValue)
-                        print(json["last_name"].stringValue)
-                        print(json["picture"]["data"]["url"])
-                    }
-                })
-                
-                connection.start()
-                
-                
                 // If the user is signed in and authenticated, segue to a new view controller.
-                if let _ = user {
+                if let newUser = user {
+                    let graphPath = "me"
+                    let parameters = ["fields": "id, email, name, first_name, last_name, picture"]
+                    let graphRequest = FBSDKGraphRequest(graphPath: graphPath, parameters: parameters)
+                    let connection = FBSDKGraphRequestConnection()
+                    
+                    connection.add(graphRequest, completionHandler: { (connection, result, error) in
+                        if let error = error {
+                            print(error.localizedDescription)
+                        } else {
+                            let json = JSON(result!)
+                            BackYardBaseAPI.backyardAPI.createNewUser(newUser.uid, data: json)
+                        }
+                    })
+                    connection.start()
+                    
                     let homeController = HomeViewController()
                     self.navigationController?.pushViewController(homeController, animated: true)
                 }
