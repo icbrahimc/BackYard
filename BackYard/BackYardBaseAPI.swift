@@ -27,6 +27,11 @@ class BackYardBaseAPI: NSObject {
     }
     
     /**
+      Create user with user details.
+    */
+    
+    
+    /**
      Given a user's UUID, fetch the data associated with that user.
     */
     func getUserData(uuid: String, callback: @escaping (String, String, String, String, String) -> ()) {

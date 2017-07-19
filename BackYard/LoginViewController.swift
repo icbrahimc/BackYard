@@ -9,6 +9,7 @@
 import FirebaseAuth
 import FBSDKCoreKit
 import FBSDKLoginKit
+import SwiftyJSON
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -63,6 +64,7 @@ class LoginViewController: UIViewController {
 
     /** Facebook Auth */
     func handleFaceBookLogin() {
+        
         FBSDKLoginManager().logIn(withReadPermissions: ["email", "public_profile"], from: self, handler: {
             (result, err) in
             if let error = err {
@@ -83,6 +85,27 @@ class LoginViewController: UIViewController {
                     return
                 }
                 
+                let graphPath = "me"
+                let parameters = ["fields": "id, email, name, first_name, last_name, picture"]
+                let graphRequest = FBSDKGraphRequest(graphPath: graphPath, parameters: parameters)
+                let connection = FBSDKGraphRequestConnection()
+                
+                connection.add(graphRequest, completionHandler: { (connection, result, error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    } else {
+                        let json = JSON(result!)
+                        print(json["email"].stringValue)
+                        print(json["name"].stringValue)
+                        print(json["first_name"].stringValue)
+                        print(json["last_name"].stringValue)
+                        print(json["picture"]["data"]["url"])
+                    }
+                })
+                
+                connection.start()
+                
+                
                 // If the user is signed in and authenticated, segue to a new view controller.
                 if let _ = user {
                     let homeController = HomeViewController()
@@ -90,6 +113,8 @@ class LoginViewController: UIViewController {
                 }
             }
         })
+        
+        
     }
 }
 
