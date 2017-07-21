@@ -22,6 +22,7 @@
 		B547CC48E990895486CC49C7 /* Pods_BackYardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFC67AE09A28F33724F9271 /* Pods_BackYardUITests.framework */; };
 		D20E99D87B0ACFB9EF396BA3 /* Pods_BackYard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2443245C6395CC971A2C6FD /* Pods_BackYard.framework */; };
 		F0AB1D061F1A994E00C7F95E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1D051F1A994E00C7F95E /* User.swift */; };
+		F0CD5FA01F21965000B4B964 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB1D051F1A994E00C7F95E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,6 +290,7 @@
 				TargetAttributes = {
 					AA10051A1EEFCF6D0056B67D = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = YJBTMZFWP2;
 						ProvisioningStyle = Manual;
 					};
 					AA10052E1EEFCF6D0056B67D = {
@@ -517,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CD5FA01F21965000B4B964 /* User.swift in Sources */,
 				AA10053F1EEFCF6D0056B67D /* BackYardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,12 +650,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YJBTMZFWP2;
 				INFOPLIST_FILE = BackYard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.backyardtheapp.BackYard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "0533d33c-7422-4da4-b34c-022c518d1fc5";
+				PROVISIONING_PROFILE_SPECIFIER = "Omar's Profile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -663,12 +667,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = YJBTMZFWP2;
 				INFOPLIST_FILE = BackYard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.backyardtheapp.BackYard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "0533d33c-7422-4da4-b34c-022c518d1fc5";
+				PROVISIONING_PROFILE_SPECIFIER = "Omar's Profile";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

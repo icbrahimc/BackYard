@@ -12,10 +12,12 @@ import FirebaseAuth
 import FirebaseDatabase
 import SwiftyJSON
 
+typealias api = BackYardBaseAPI
+
 class BackYardBaseAPI: NSObject {
     static let backyardAPI = BackYardBaseAPI()
     private let rootDB: DatabaseReference! = Database.database().reference()
-    
+
     /**
      Authenticate the user with credentials.
     */
@@ -65,4 +67,29 @@ class BackYardBaseAPI: NSObject {
             }
         })
     }
+    
+    /**
+     Given a user's UUID and some data, update the associated user's account.
+    */
+    func updateUserData(_ uuid: String, data: [String: Any]) {
+        rootDB.child("userDB").child(uuid).updateChildValues(data, withCompletionBlock: { (err, ref) in
+            if let error = err {
+                print(error.localizedDescription)
+            }
+        })
+    }
+    
+    /**
+     Given a user's UUID, delete the associated user's account.
+     */
+    func deleteUser(_ uuid: String) {
+        rootDB.child(uuid).removeValue(completionBlock: { (err, ref) in
+            if let error = err {
+                print(error.localizedDescription)
+            }
+        })
+    }
+    
+    
+    
 }

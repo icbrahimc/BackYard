@@ -97,7 +97,7 @@ class LoginViewController: UIViewController {
                             print(error.localizedDescription)
                         } else {
                             let json = JSON(result!)
-                            BackYardBaseAPI.backyardAPI.createNewUser(newUser.uid, data: json)
+                            api.backyardAPI.createNewUser(newUser.uid, data: json)
                         }
                     })
                     connection.start()
